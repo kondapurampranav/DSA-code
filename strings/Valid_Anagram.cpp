@@ -22,6 +22,10 @@
 #include <cctype>
 
 bool areAnagrams(std::string str, std::string str2){
+    if(str.length() != str2.length()){
+        return false;
+    }
+    
     int arr[26]={0};
     int i=0,j=0;
 
