@@ -11,7 +11,7 @@ vector<int> twoSum(vector<int>& nums, int target) {
         for(int i=0;i<nums.size();i++){
             needed = target - nums[i];
             if(mp.find(needed) != mp.end()){
-                return {i , mp[needed]};
+                return {i, mp[needed]};
             }
             mp[nums[i]] = i;
             
